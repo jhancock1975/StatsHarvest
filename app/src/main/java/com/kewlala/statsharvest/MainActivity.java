@@ -15,17 +15,10 @@
  */
 package com.kewlala.statsharvest;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.TextView;
-
-import com.example.android.miwok.SimpleFragmentPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
 

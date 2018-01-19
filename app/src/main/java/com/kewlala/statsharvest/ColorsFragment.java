@@ -10,11 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
-
-import com.example.android.miwok.ListItemClickListener;
-import com.example.android.miwok.Word;
-import com.example.android.miwok.WordAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

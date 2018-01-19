@@ -10,13 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
-import com.kewlala.statsharvest.R;
-import com.kewlala.statsharvest.Word;
 
 import java.util.List;
 

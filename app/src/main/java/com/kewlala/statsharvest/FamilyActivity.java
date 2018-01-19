@@ -1,9 +1,7 @@
 package com.kewlala.statsharvest;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
-import com.example.android.miwok.FamilyFragment;
+import android.support.v7.app.AppCompatActivity;
 
 public class FamilyActivity extends AppCompatActivity {
 

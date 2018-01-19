@@ -1,18 +1,10 @@
 package com.kewlala.statsharvest;
 
 
-import android.app.Activity;
 import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v7.app.AppCompatActivity;
-
-import com.kewlala.statsharvest.ColorsFragment;
-import com.kewlala.statsharvest.FamilyFragment;
-import com.kewlala.statsharvest.NumbersFragment;
-import com.kewlala.statsharvest.PhraseFragment;
-import com.kewlala.statsharvest.R;
 
 import java.util.ArrayList;
 import java.util.List;

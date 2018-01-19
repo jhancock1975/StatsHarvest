@@ -1,10 +1,7 @@
 package com.kewlala.statsharvest;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
-import com.kewlala.statsharvest.PhraseFragment;
-import com.kewlala.statsharvest.R;
+import android.support.v7.app.AppCompatActivity;
 
 public class PhrasesActivity extends AppCompatActivity {
 
