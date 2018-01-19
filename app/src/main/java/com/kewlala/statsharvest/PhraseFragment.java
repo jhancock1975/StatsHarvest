@@ -1,4 +1,4 @@
-package com.example.android.miwok;
+package com.kewlala.statsharvest;
 
 
 import android.media.MediaPlayer;
@@ -11,6 +11,11 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.example.android.miwok.Word;
+import com.example.android.miwok.WordAdapter;
+import com.kewlala.statsharvest.ListItemClickListener;
+import com.kewlala.statsharvest.R;
 
 import java.util.ArrayList;
 import java.util.List;

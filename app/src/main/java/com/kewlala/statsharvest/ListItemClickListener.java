@@ -1,4 +1,4 @@
-package com.example.android.miwok;
+package com.kewlala.statsharvest;
 
 import android.content.Context;
 import android.media.AudioManager;
@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+
+import com.example.android.miwok.Word;
 
 import java.util.List;
 

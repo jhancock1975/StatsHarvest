@@ -1,4 +1,4 @@
-package com.example.android.miwok;
+package com.kewlala.statsharvest;
 
 /**
  * Created by jhancock2010 on 1/7/18.

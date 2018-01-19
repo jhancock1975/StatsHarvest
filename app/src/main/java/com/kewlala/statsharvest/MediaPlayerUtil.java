@@ -1,4 +1,4 @@
-package com.example.android.miwok;
+package com.kewlala.statsharvest;
 
 import android.media.MediaPlayer;
 

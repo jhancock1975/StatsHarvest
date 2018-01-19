@@ -1,4 +1,4 @@
-package com.example.android.miwok;
+package com.kewlala.statsharvest;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -14,6 +14,9 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.kewlala.statsharvest.R;
+import com.kewlala.statsharvest.Word;
 
 import java.util.List;
 
