@@ -21,10 +21,9 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
 
         this.context= context;
         tabTitles = new ArrayList<String>();
-        tabTitles.add(context.getString(R.string.category_numbers));
-        tabTitles.add(context.getString(R.string.category_family));
-        tabTitles.add(context.getString(R.string.category_colors));
-        tabTitles.add(context.getString(R.string.category_phrases));
+        tabTitles.add(context.getString(R.string.tab_title_data_entry));
+        tabTitles.add(context.getString(R.string.tab_title_configure_gps_logger));
+        tabTitles.add(context.getString(R.string.tab_title_stats));
     }
 
     Context context;
@@ -37,10 +36,8 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
             return new DataEntryFragment();
         } else if (position == 1){
             return new FamilyFragment();
-        } else if (position == 2) {
-            return new ColorsFragment();
         } else  {
-            return new PhraseFragment();
+            return new ColorsFragment();
         }
     }
 
@@ -51,8 +48,9 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
         return tabTitles.get(position);
     }
 
+    public static final int NUM_TABS=3;
     @Override
     public int getCount() {
-        return 4;
+        return NUM_TABS;
     }
 }

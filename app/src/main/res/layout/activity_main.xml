@@ -17,7 +17,7 @@
             android:id="@+id/numbers"
             style="@style/CategoryStyle"
             android:background="?android:attr/selectableItemBackground"
-            android:text="@string/category_numbers" />
+            android:text="@string/tab_title_data_entry" />
     </FrameLayout>
 
     <!-- Family category -->
@@ -29,7 +29,7 @@
             android:id="@+id/family"
             style="@style/CategoryStyle"
             android:background="?android:attr/selectableItemBackground"
-            android:text="@string/category_family" />
+            android:text="@string/tab_title_configure_gps_logger" />
     </FrameLayout>
 
     <!-- Colors category -->
@@ -41,7 +41,7 @@
             android:id="@+id/colors"
             style="@style/CategoryStyle"
             android:background="?android:attr/selectableItemBackground"
-            android:text="@string/category_colors" />
+            android:text="@string/tab_title_stats" />
     </FrameLayout>
 
     <!-- Phrases category -->

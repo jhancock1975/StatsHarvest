@@ -19,6 +19,10 @@ import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,5 +45,31 @@ public class MainActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
         tabLayout.setupWithViewPager(viewPager);
 
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar);
+
+
+    }
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_action_bar, menu);
+        return super.onPrepareOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        Log.d("MainActivity", "action bar selected - determining action");
+        switch (item.getItemId()) {
+            case R.id.action_save:
+                // User chose the "Settings" item, show the app settings UI...
+                Log.d("MainActivity", "action bar selected - save action");
+                return true;
+
+            // If we got here, the user's action was not recognized.
+            // Invoke the superclass to handle it.
+            default: return super.onOptionsItemSelected(item);
+
+        }
     }
 }

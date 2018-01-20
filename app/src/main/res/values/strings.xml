@@ -20,12 +20,13 @@
     <string name="category_phrases">Phrases</string>
 
     <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
-    <string name="category_colors">Colors</string>
+    <string name="tab_title_stats">Stats</string>
 
     <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
-    <string name="category_numbers">Numbers</string>
+    <string name="tab_title_data_entry">Data Entry</string>
 
     <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
-    <string name="category_family">Family</string>
+    <string name="tab_title_configure_gps_logger">GPS Logger</string>
+    <string name="menu_save_text">Save</string>
 
 </resources>
