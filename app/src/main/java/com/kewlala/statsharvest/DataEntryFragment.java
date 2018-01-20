@@ -17,12 +17,12 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class NumbersFragment extends Fragment {
+public class DataEntryFragment extends Fragment {
 
     MediaPlayer mediaPlayer;
     ListItemClickListener clickListener;
 
-    public NumbersFragment() {
+    public DataEntryFragment() {
         // Required empty public constructor
     }
 

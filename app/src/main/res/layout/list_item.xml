@@ -25,22 +25,15 @@
             android:padding="16dp">
 
 
-            <TextView
+            <EditText
                 android:id="@+id/miwok"
                 style="@style/CategoryStyle"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
                 android:layout_height="0dp"
                 android:layout_gravity="bottom"
                 android:layout_weight="1" />
 
-            <TextView
-                android:id="@+id/english"
-                style="@style/CategoryStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_gravity="top"
-                android:layout_weight="1"
-                android:textStyle="normal" />
 
         </LinearLayout>
         <ImageView

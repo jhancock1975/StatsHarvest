@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -49,17 +50,9 @@ public class WordAdapter extends ArrayAdapter<Word> {
                 "color == " + bgColor);
 
 
-        // Find the TextView in the list_item.xml layout with the english word
-        TextView englishTextView = (TextView) listItemView.findViewById(R.id.english);
-
-
-        // Get the version name from the current Word object and
-        // set this text on the English TextView
-        englishTextView.setText(currentWord.getEnglish());
-
 
         // Find the TextView in the list_item.xml layout with the ID miwok
-        TextView miwokTextView = (TextView) listItemView.findViewById(R.id.miwok);
+        EditText miwokTextView = (EditText) listItemView.findViewById(R.id.miwok);
         // Get the version number from the current word object and
         // set this text on the Miwok TextView
         miwokTextView.setText(currentWord.getMiwok());
