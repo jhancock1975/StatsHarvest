@@ -7,25 +7,25 @@
     android:orientation="vertical">
 
     <!-- action bar at the top of the screen -->
-    <android.support.v7.widget.Toolbar android:id="@+id/my_toolbar"
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        app:theme="@style/ToolBarStyle"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto" />
+        app:theme="@style/ToolBarStyle" />
 
     <android.support.design.widget.TabLayout
         android:id="@+id/sliding_tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:tabBackground="@color/primary_color"
-        app:tabTextColor="@color/tab_text_color"
-        app:tabSelectedTextColor="@android:color/white"
         app:tabIndicatorColor="@android:color/white"
-        app:tabMode="fixed" />
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabTextColor="@color/tab_text_color" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"

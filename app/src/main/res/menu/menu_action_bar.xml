@@ -4,23 +4,39 @@
 
 
     <!-- show file name -->
-    <item android:id="@+id/file_name"
+    <item
+        android:id="@+id/file_name"
         android:title="@string/toolbar_file_name"
-        app:showAsAction="always"/>
+        app:showAsAction="always" />
 
-    <item android:id="@+id/file_actions"
+    <group
+        android:id="@+id/file_actions"
         android:title="@string/menu_file_actions_title"
         app:showAsAction="never">
 
-        <item android:id="@+id/action_save"
+        <item
+            android:id="@+id/action_save"
             android:title="@string/menu_save_text"
-            app:showAsAction="never"/>
+            app:showAsAction="never" />
 
-        <item android:id="@+id/action_new"
+        <item
+            android:id="@+id/action_new"
             android:title="@string/menu_new_file_text"
-            app:showAsAction="never"/>
+            app:showAsAction="never" />
+    </group>
 
+    <group
+        android:id="@+id/menu_data_type_group"
+        android:checkableBehavior="single">
 
-    </item>
+        <item
+            android:id="@+id/menu_categorical_data"
+            android:title="@string/menu_title_categorical_data" />
+        <item
+            android:id="@+id/menu_quantitative_data"
+            android:title="@string/menu_title_quantitative_data" />
+
+    </group>
+
 
 </menu>

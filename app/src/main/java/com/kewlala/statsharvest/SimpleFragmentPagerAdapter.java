@@ -35,7 +35,7 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
         if (position == 0) {
             return new DataEntryFragment();
         } else if (position == 1){
-            return new FamilyFragment();
+            return new GpsLoggerConfigFragment();
         } else  {
             return new ColorsFragment();
         }

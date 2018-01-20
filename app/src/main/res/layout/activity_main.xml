@@ -24,7 +24,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/category_family">
+        android:background="@color/gps_config_layout_background">
         <TextView
             android:id="@+id/family"
             style="@style/CategoryStyle"

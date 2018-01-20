@@ -26,11 +26,14 @@
     <string name="tab_title_data_entry">Data Entry</string>
 
     <!-- Category name for the GPS logger [CHAR LIMIT=20] -->
-    <string name="tab_title_configure_gps_logger">GPS Logger</string>
+    <string name="tab_title_configure_gps_logger">GPS Log</string>
 
     <string name="menu_save_text">Save</string>
     <string name="menu_new_file_text">New</string>
     <string name="toolbar_file_name">test-file-name</string>
     <string name="menu_file_actions_title">File</string>
+
+    <string name="menu_title_categorical_data">Categorical</string>
+    <string name="menu_title_quantitative_data">Quantitative</string>
 
 </resources>
