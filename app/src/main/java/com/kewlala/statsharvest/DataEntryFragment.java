@@ -68,7 +68,6 @@ public class DataEntryFragment extends Fragment {
 
         listView.setOnItemClickListener(clickListener);
 
-
         return rootView;
     }
 

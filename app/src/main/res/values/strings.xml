@@ -25,8 +25,12 @@
     <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
     <string name="tab_title_data_entry">Data Entry</string>
 
-    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <!-- Category name for the GPS logger [CHAR LIMIT=20] -->
     <string name="tab_title_configure_gps_logger">GPS Logger</string>
+
     <string name="menu_save_text">Save</string>
+    <string name="menu_new_file_text">New</string>
+    <string name="toolbar_file_name">test-file-name</string>
+    <string name="menu_file_actions_title">File</string>
 
 </resources>

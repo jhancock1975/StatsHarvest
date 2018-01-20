@@ -47,14 +47,12 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
-
-
     }
-
     @Override
-    public boolean onPrepareOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(Menu menu) {
+        Log.d("MainActivity", "onPrepareOptionsMenu - inflating menu");
         getMenuInflater().inflate(R.menu.menu_action_bar, menu);
-        return super.onPrepareOptionsMenu(menu);
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
@@ -72,4 +70,5 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
+
 }

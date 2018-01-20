@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="menu_save_text">Save</string>
+    <string name="toolbar_file_name">test-file-name</string>
+    <string name="menu_file_actions_title">File</string>
 </resources>
