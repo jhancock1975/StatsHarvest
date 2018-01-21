@@ -15,7 +15,10 @@
  */
 package com.kewlala.statsharvest;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.DocumentsContract;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -24,9 +27,12 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.io.File;
+
 public class MainActivity extends AppCompatActivity {
 
     public static final String APP_DEBUG_TAG = "StatsHarvest";
+    private FileManager fileManager = new FileManager();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +71,8 @@ public class MainActivity extends AppCompatActivity {
                 // User chose the "Settings" item, show the app settings UI...
                 Log.d("MainActivity", "action bar selected - save action");
                 return true;
+            case R.id.action_open:
+                fileManager.openFile(this);
 
             // If we got here, the user's action was not recognized.
             // Invoke the superclass to handle it.
@@ -73,4 +81,31 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+
+        Log.d(MainActivity.APP_DEBUG_TAG, "start onActivityResult");
+
+        switch (requestCode) {
+            case FileManager.FILE_SELECT_CODE:
+                if (resultCode == RESULT_OK) {
+
+                    Log.d(MainActivity.APP_DEBUG_TAG, "MainActivity::onActivityResult - " +
+                            "got FILE_SELECT_CODE request code");
+
+                    final Uri uri = data.getData();
+                    Log.d(MainActivity.APP_DEBUG_TAG, "MainActivity::onActivityResult - " +
+                            "uri = " + uri);
+
+                    if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT) {
+                        String fileName = DocumentsContract.getDocumentId(uri);
+                        Log.d(MainActivity.APP_DEBUG_TAG, "MainActivty::onActivityResult " +
+                                "fileName == " + fileName);
+                    }
+
+                }
+                break;
+        }
+    }
 }
