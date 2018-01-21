@@ -33,7 +33,6 @@ public class ListItemClickListener implements OnItemClickListener {
             Log.d("phrases", "audiofocus change i == " +  i);
             switch (i){
                 case AudioManager.AUDIOFOCUS_LOSS:
-                    releaseMediaPlayer();
                     break;
                 case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT:
                 case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK:
@@ -57,14 +56,14 @@ public class ListItemClickListener implements OnItemClickListener {
     private MediaPlayer.OnCompletionListener completionListener = new MediaPlayer.OnCompletionListener() {
         @Override
         public void onCompletion(MediaPlayer mediaPlayer) {
-            releaseMediaPlayer();
+
         }
     };
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
         Log.d("numbers", "onCreate.onItemClick");
-        releaseMediaPlayer();
+
         mediaPlayer = MediaPlayer.create(context,
                 words.get(i).getSoundId());
          am = (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
@@ -82,24 +81,6 @@ public class ListItemClickListener implements OnItemClickListener {
         }
 
     }
-    public void releaseMediaPlayer() {
 
-        Log.d("releaseMediaPlayer", "mediaPlayer == " + mediaPlayer);
-
-        // If the media player is not null, then it may be currently playing a sound.
-        if (mediaPlayer != null) {
-            // Regardless of the current state of the media player, release its resources
-            // because we no longer need it.
-            mediaPlayer.release();
-
-            // Set the media player back to null. For our code, we've decided that
-            // setting the media player to null is an easy way to tell that the media player
-            // is not configured to play an audio file at the moment.
-            mediaPlayer = null;
-        }
-        if (this.am != null){
-            this.am.abandonAudioFocus(afChangeListener);
-        }
-    }
 
 }

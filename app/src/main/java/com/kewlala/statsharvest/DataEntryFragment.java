@@ -75,7 +75,7 @@ public class DataEntryFragment extends Fragment {
     public void onStop() {
         super.onStop();
         Log.d("numbers", "onstop mediaPlayer == " + mediaPlayer);
-        clickListener.releaseMediaPlayer();
+
 
     }
 }

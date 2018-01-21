@@ -8,7 +8,7 @@
     android:orientation="vertical"
     tools:context="com.kewlala.statsharvest.MainActivity">
 
-    <!-- Numbers category -->
+    <!-- data entry -->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,19 +20,20 @@
             android:text="@string/tab_title_data_entry" />
     </FrameLayout>
 
-    <!-- Family category -->
+    <!-- gps configure-->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/gps_config_layout_background">
+        android:background="@color/gps_config_layout_background"
+        android:theme="@style/NormalTextStyle">
         <TextView
-            android:id="@+id/family"
+            android:id="@+id/gps_config"
             style="@style/CategoryStyle"
             android:background="?android:attr/selectableItemBackground"
             android:text="@string/tab_title_configure_gps_logger" />
     </FrameLayout>
 
-    <!-- Colors category -->
+    <!-- stats -->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,17 +43,5 @@
             style="@style/CategoryStyle"
             android:background="?android:attr/selectableItemBackground"
             android:text="@string/tab_title_stats" />
-    </FrameLayout>
-
-    <!-- Phrases category -->
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/category_phrases">
-        <TextView
-            android:id="@+id/phrases"
-            style="@style/CategoryStyle"
-            android:background="?android:attr/selectableItemBackground"
-            android:text="@string/category_phrases" />
     </FrameLayout>
 </LinearLayout>

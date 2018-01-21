@@ -3,4 +3,13 @@
     <string name="menu_save_text">Save</string>
     <string name="toolbar_file_name">test-file-name</string>
     <string name="menu_file_actions_title">File</string>
+    <string name="gps_logging_enabled">GPS Logging Enabled</string>
+    <string name="current_gps_coordinates">Current GPS Coordinates</string>
+    <string name="longitude">Longitude:</string>
+    <string name="sampling_rate">Sampling Rate</string>
+    <string name="log_file_name">Log File Name</string>
+    <string name="maximum_log_file_size">Maximum Log File Size</string>
+    <string name="log_saving">Log Saving</string>
+    <string name="rolling_log">Rolling Log</string>
+    <string name="stop_when_full">Stop When Full</string>
 </resources>

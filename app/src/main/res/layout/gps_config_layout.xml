@@ -3,80 +3,86 @@
     android:id="@+id/layout_gps_config_fragment_wrapper"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:paddingLeft="16dp"
+    android:paddingBottom="8dp"
+    android:orientation="vertical"
+    android:theme="@style/HeadingTextStyle">
 
     <Switch
         android:id="@+id/switch_gps_logging"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:switchPadding="4dp"
-        android:text="GPS Logging Enabled" />
+        style="@style/HeadingTextStyle"
+        android:text="@string/gps_logging_enabled" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Current GPS Coordinates" />
+        android:text="@string/current_gps_coordinates" />
+
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:orientation="horizontal">
 
-        <LinearLayout
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            style="@style/NormalTextStyle"
+            android:text="@string/latitude" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Latitude:" />
-
-            <TextView
-                android:id="@+id/layout_latitude_value"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
-        </LinearLayout>
-
-
-        <LinearLayout
+        <TextView
+            android:id="@+id/layout_latitude_value"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Longitude:" />
-
-            <TextView
-                android:id="@+id/layout_longitude_value"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
-        </LinearLayout>
+            style="@style/NormalTextStyle"
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 
-    <TextView
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sampling Rate" />
+        android:paddingLeft="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/NormalTextStyle"
+            android:text="@string/longitude" />
+
+        <TextView
+            android:id="@+id/layout_longitude_value"
+            android:layout_width="wrap_content"
+            style="@style/NormalTextStyle"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Log File Name" />
+        android:text="@string/sampling_rate" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Maximum Log File Size" />
+        android:text="@string/log_file_name" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Log Saving" />
+        android:text="@string/maximum_log_file_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/log_saving" />
 
     <RadioGroup
         android:layout_width="wrap_content"
@@ -84,13 +90,15 @@
         android:orientation="vertical">
 
         <RadioButton
+            style="@style/NormalTextStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rolling Log" />
+            android:text="@string/rolling_log" />
 
         <RadioButton
+            style="@style/NormalTextStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Stop When Full" />
+            android:text="@string/stop_when_full" />
     </RadioGroup>
 </LinearLayout>

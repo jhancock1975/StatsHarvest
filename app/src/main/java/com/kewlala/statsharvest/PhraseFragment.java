@@ -76,7 +76,6 @@ public class PhraseFragment extends Fragment {
     public void onStop() {
         super.onStop();
         Log.d("phrases  ", "onstop mediaPlayer == " + mediaPlayer);
-        clickListener.releaseMediaPlayer();
 
     }
 

@@ -71,7 +71,6 @@ public class ColorsFragment extends Fragment {
     public void onStop() {
         super.onStop();
         Log.d("colors", "onstop mediaPlayer == " + mediaPlayer);
-        clickListener.releaseMediaPlayer();
 
     }
 }

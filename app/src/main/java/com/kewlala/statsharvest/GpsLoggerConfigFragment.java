@@ -70,7 +70,7 @@ public class GpsLoggerConfigFragment extends Fragment {
     public void onStop() {
         super.onStop();
         Log.d("familiy", "onstop mediaPlayer == " + mediaPlayer);
-        clickListener.releaseMediaPlayer();
+
 
     }
 

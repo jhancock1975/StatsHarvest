@@ -26,7 +26,7 @@
     <string name="tab_title_data_entry">Data Entry</string>
 
     <!-- Category name for the GPS logger [CHAR LIMIT=20] -->
-    <string name="tab_title_configure_gps_logger">GPS Log</string>
+    <string name="tab_title_configure_gps_logger">GPS Config</string>
 
     <string name="menu_save_text">Save</string>
     <string name="menu_new_file_text">New</string>
@@ -35,5 +35,15 @@
 
     <string name="menu_title_categorical_data">Categorical</string>
     <string name="menu_title_quantitative_data">Quantitative</string>
+    <string name="gps_logging_enabled">GPS Logging Enabled</string>
+    <string name="current_gps_coordinates">Current GPS Coordinates:</string>
+    <string name="latitude">Latitude:</string>
+    <string name="longitude">Longitude:</string>
+    <string name="sampling_rate">Sampling Rate</string>
+    <string name="log_file_name">Log File Name</string>
+    <string name="maximum_log_file_size">Maximum Log File Size</string>
+    <string name="log_saving">Log Saving</string>
+    <string name="rolling_log">Rolling Log</string>
+    <string name="stop_when_full">Stop When Full</string>
 
 </resources>
