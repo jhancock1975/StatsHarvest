@@ -45,9 +45,9 @@ public class GpsLoggerConfigFragment extends Fragment {
 
         try {
 
-            GpsControl gpsControl = new GpsControl(getContext());
+            GpsControl gpsControl = new GpsControl(getActivity());
 
-            Location location = gpsControl.getLocation();
+            Location location = gpsControl.getLocation(getContext());
 
             latitudeText.setText(location.getLatitude() +"");
 
