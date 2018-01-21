@@ -4,6 +4,9 @@ StatsHarvest
 This app is for collecting data, and calculating summary statistics on that
 data.
 
+My goal is to use this app to use statistics to help me find relationships
+between phenomena in every day life.
+
 Pre-requisites
 --------------
 
